@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seasons</title>
+  <link rel="stylesheet" href="seasons+fading-images.css">
+</head>
+
+<body>
+  <canvas id="myCanvas" style="
+    z-index: 2;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    "></canvas>
+
+  <header>
+    <div class="all-box">
+      <h1>Choose a season and get a quote</h1>
+
+      <div class="buttons-container">
+        <button onclick="
+    glowButton('Spring');
+    // init();
+
+  ">Spring</button>
+
+        <button onclick="
+    glowButton('Winter');
+    // init();
+  ">Winter</button>
+
+        <button onclick="
+    glowButton('Summer');
+    // init();
+  ">Summer</button>
+
+        <button onclick="
+    glowButton('Autumn');
+    // init();
+  ">Autumn</button>
+
+        <div class="p-container">
+          <p class="js-result"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="backgrounds-container">
+      <img class="showing background" src="images/springBackground.jpg">
+      <img class="background" src="images/winterBackground.jpg">
+      <img class="background" src="images/summerBackground.jpg">
+      <img class="background" src="images/autumnBackground.jpg">
+    </div>
+  </header>
+
+  <script src="seasons+fading-images.js"></script>
+  <!-- <script src="canvas.js"></script> -->
+</body>
+
+</html>
